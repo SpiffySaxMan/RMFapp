@@ -12,6 +12,7 @@
     <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
     <link href="../../assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="theme.css" rel="stylesheet">
   </head>
@@ -55,11 +56,13 @@
       <button type="button" class="btn btn-lg btn-primary">Sign Up</button>
       
       
-    <!-- Core JavaScript
+      <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../../assets/jquery-3.1.0.js"></script>
     <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="../../assets/bootstrap/js/docs.min.js"></script>
+    
+    
     </body>
 </html>

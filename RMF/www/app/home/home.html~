@@ -12,8 +12,9 @@
     <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
     <link href="../../assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
+    <!-- Custom styles for this application -->
+    <link href="../../assets/stylesheets/application.css" rel="stylesheet">
+    <!-- Custom styles for this page -->
     <link href="theme.css" rel="stylesheet">
   </head>
 
@@ -35,7 +36,7 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
 	    <li><a href="#users">Users</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#settings">Settings</a></li>
             <li><a href="#login">Log In</a></li>
             </li>
           </ul>
@@ -50,19 +51,33 @@
         <h1>Welcome to the Roomate Finder App!</h1>
         <p>This app was made to connect people who are looking for roomates in a safe, stress free enviroment.</p>
       </div>
-      <div class="page-header">
+      <div class="col-md-4 text-center">
         <h1>New User?</h1>
+        <button type="button" class="btn btn-lg btn-primary">Sign Up</button>
       </div>
-      <button type="button" class="btn btn-lg btn-primary">Sign Up</button>
+      </body>
       
       
-      <!-- Bootstrap core JavaScript
+      <div id="wrap">
+        <div id="main" class="container clear-top">
+          <small>
+            The Roomate Finder app</a>
+            by William Bennett, Xavier Cline, and Jack Wright</a>
+          </small>
+          <nav>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <footer class="footer"></footer>
+      
+    <!-- Core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../../assets/jquery-3.1.0.js"></script>
+    <script src="../../assets/js/jquery-3.1.0.js"></script>
     <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="../../assets/bootstrap/js/docs.min.js"></script>
-    
-    
-    </body>
 </html>

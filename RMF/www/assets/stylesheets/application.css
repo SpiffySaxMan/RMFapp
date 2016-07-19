@@ -68,6 +68,13 @@ p {
   text-decoration: none;
 }
 
+/* body */
+
+.body {
+  position: relative;
+  padding-top: 75px;
+}
+
 /* footer */
 
 .footer {

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,9 +16,7 @@
     <link href="../../assets/stylesheets/application.css" rel="stylesheet">
     <!-- Custom styles for this page -->
     <link href="theme.css" rel="stylesheet">
-  </head>
-
-  <body role="document">
+    
     <!-- Fixed navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -35,22 +32,24 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">Home</a></li>
-	    <li><a href="#users">Users</a></li>
-            <li><a href="#settings">Settings</a></li>
-            <li><a href="#login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	    <li><a href="../users/index.html">Users</a></li>
+            <li><a href="../settings/index.html">Settings</a></li>
+            <li><a href="../sessions/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+  </head>
+  
+  <body>
     <div class="container theme-showcase" role="main">
-      <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
         <h1>Welcome to the Roomate Finder App!</h1>
         <p>This app was made to connect people who are looking for roomates in a safe, stress free enviroment.</p>
         <div class="center">
           <h1>New User?</h1>
-          <a href="#login"><button type="button" class="btn btn-lg btn-primary">Sign Up</button></a>
+          <a href="../sessions/signup.html"><button type="button" class="btn btn-lg btn-primary">Sign Up</button></a>
        </div>
      </div>
     </div>
@@ -77,6 +76,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../../assets/js/jquery-3.1.0.js"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.js"></script>
     <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../../assets/bootstrap/js/docs.min.js"></script>
+    <script src="../../assets/bootstrap/js/npm.js"></script>
 </html>

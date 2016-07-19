@@ -42,7 +42,7 @@
     </nav>
   </head>
   
-  <body>
+  <body class="body">
     <div class="container theme-showcase" role="main">
       <div class="jumbotron">
         <h1>Welcome to the Roomate Finder App!</h1>

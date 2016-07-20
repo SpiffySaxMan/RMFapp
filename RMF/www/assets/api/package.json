@@ -1,0 +1,23 @@
+{
+  "name": "rfmapi",
+  "version": "1.0.0",
+  "description": "API for RFMapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpiffySaxMan/RMFapp.git"
+  },
+  "author": "William Bennett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpiffySaxMan/RMFapp/issues"
+  },
+  "homepage": "https://github.com/SpiffySaxMan/RMFapp#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-stormpath": "^3.1.3"
+  }
+}

@@ -14,18 +14,11 @@ stormpath.loadApiKey(apiKeyFilePath, function apiKeyFileLoaded(err, apiKey) {
   client = new stormpath.Client({ apiKey: apiKey });
 });
 
-var appHref = 'https://api.stormpath.com/v1/applications/KzUPEioLybUfu2YwUjb8o';
+var app = {
+  name: 'RMFapp',
+  description: "Roomate Finder App"
+};
 
-client.getApplication(appHref, function(err, app) {
-  if (err) throw err;
-  console.log(app);
-});
-
-client.getDirectories({ expand: 'groups' }, function(err, dirs) {
-  dirs.each(function(dir, cb) {
-    console.log(dir);
-    cb();
-  }, function(err) {
-    console.log('Finished iterating over directories.');
-  });
+client.createApplication(app, { createDirectory: true }, function(err, createdApp) {
+  console.log(createdApp);
 });

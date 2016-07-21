@@ -14,18 +14,14 @@ stormpath.loadApiKey(apiKeyFilePath, function apiKeyFileLoaded(err, apiKey) {
   client = new stormpath.Client({ apiKey: apiKey });
 });
 
-var appHref = 'https://api.stormpath.com/v1/applications/KzUPEioLybUfu2YwUjb8o';
+client.getDirectory('https://api.stormpath.com/v1/directories/13tj6f50q7jJ7WvDu6SxHa', callback);
 
-client.getApplication(appHref, function(err, app) {
-  if (err) throw err;
-  console.log(app);
-});
+var account = {
+  username: 'example',
+  email: 'example@gmail.com',
+  password: 'Changeme!'
+};
 
-client.getDirectories({ expand: 'groups' }, function(err, dirs) {
-  dirs.each(function(dir, cb) {
-    console.log(dir);
-    cb();
-  }, function(err) {
-    console.log('Finished iterating over directories.');
-  });
+createdApp.createAccount(account, function(err, createdAccount) {
+  console.log(createdAccount);
 });

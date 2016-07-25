@@ -12,7 +12,6 @@ html, body {
 
 #main {
   overflow;auto;
-  padding-bottom: 150px; /*needs to be bigger than footer height */
 }
 
 .center {
@@ -74,6 +73,16 @@ p {
   position: relative;
   padding-top: 75px;
   padding-bottom: 75px;
+}
+
+.loadingBody {
+  content: url('../img/loading.gif');
+  position: absolute;
+  left: 50%;
+  top: 3em;
+  margin-left: -16px;
+  margin-top: -16px;
+  z-index: 11;
 }
 
 /* footer */

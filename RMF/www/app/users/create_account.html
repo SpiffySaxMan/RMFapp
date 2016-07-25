@@ -48,29 +48,30 @@
           <h3>User Information</h3>
           <ul>
             <li><label for="givenName">First Name</label></li>
-              <input type="givenName" id="inputGivenName" class="form-control" placeholder="First Name" required autofocus>
+              <input type="text" id="inputgivenName" class="form-control" placeholder="First Name" required autofocus>
             <li><label for="surname">Last Name</label></li>
-              <input type="surname" id="inputSurname" class="form-control" placeholder="Last Name" required autofocus>
-            <li><label for="inputEmail">Email</label></li>
-              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+              <input type="text" id="inputsurname" class="form-control" placeholder="Last Name" required autofocus>
             <li><label for="username">Username</label></li>
-              <input type="username" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+              <input type="username" id="inputusername" class="form-control" placeholder="Username" required autofocus>
+            <li><label for="inputEmail">Email</label></li>
+              <input type="email" id="inputemail" class="form-control" placeholder="Email address" required autofocus>
             <li><label for="password">Password</label></li>
-              <input type="Password" id="inputPassword" class="form-control" placeholder="Password" required autofocus>
+              <input type="Password" id="inputpassword" class="form-control" placeholder="Password" required autofocus>
             <li><label for="password">Verify Password</label></li>
-              <input type="PasswordCheck" id="inputPassword" class="form-control" placeholder="Verify Password" required autofocus>
+              <input type="Password" id="verifypassword" class="form-control" placeholder="Verify Password" required autofocus>
           </ul>
+          <br>
+          <form class="posttypes">
+            <h3>What types of posts do you want to see?<h3>
+            <ul>
+              <input type="checkbox" id="HR"> Homeowners looking for Roomates</input><br>
+              <input type="checkbox" id="RH"> Roomates looking for Homeowners</input><br>
+              <input type="checkbox" id="RR"> Roomates looking for Roomates</input><br>
+            </ul>
+            <br>
+            <input class="btn btn-lg btn-primary" type="submit" value="Submit" ></li>
+          </form>
         </form>
-        <br>
-        <form class="posttypes">
-          <h3>What types of posts do you want to see?<h3>
-          <ul>
-            <li><input type="checkbox" value="HR"> Homeowners looking for Roomates</li>
-            <li><input type="checkbox" value="RH"> Roomates looking for Homeowners</li>
-            <li><input type="checkbox" value="RR"> Roomates looking for Roomates</li>
-          </ul>
-        </form>
-        <input class="btn btn-lg btn-primary" type="submit" value="Submit" ></li>
       </div>
     </div>
   </body>
@@ -101,6 +102,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../../assets/js/jquery-3.1.0.js"></script>
+    <script src="../../assets/js/application.js"></script>
     <script src="../../assets/bootstrap/js/bootstrap.js"></script>
     <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="../../assets/bootstrap/js/npm.js"></script>

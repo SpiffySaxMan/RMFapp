@@ -1,4 +1,7 @@
 # RMFapp
 Roomate Finder App
 
-Requires Node.js, and Cordova
+Requires JDK, and Cordova
+
+Roomate Finder API Located at:
+https://github.com/SpiffySaxMan/RMFapi

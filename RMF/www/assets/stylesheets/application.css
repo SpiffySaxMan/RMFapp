@@ -73,6 +73,7 @@ p {
 .body {
   position: relative;
   padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 /* footer */

@@ -31,7 +31,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="../home/home.html">Home</a></li>
+            <li><a href="../home/home.html">Home</a></li>
             <li><a href="../users/index.html">Users</a></li>
             <li><a href="../settings/settings.html">Settings</a></li>
             <li><a href="../sessions/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -40,20 +40,46 @@
       </div>
     </nav>
   </head>
-  
+
   <body class="body">
-    <div class="container theme-showcase" role="main">
-      <div class="jumbotron">
-        <h1>Welcome to the Roomate Finder App!</h1>
-        <p>This app was made to connect people who are looking for roomates in a safe, stress free enviroment.</p>
-        <div class="center">
-          <h1>New User?</h1>
-          <a href="../users/create_account.html"><button type="button" class="btn btn-lg btn-primary">Sign Up</button></a>
-       </div>
-     </div>
+    <div class="container well" role="main">
+      <h1>Create a new account</h1>
+        <form name="account_info" action="index_submit" method="post" accept-charset="utf-8">
+          <h3>User Information</h3>
+          <ul>
+            <li><label for="givenName">First Name</label></li>
+              <input type="givenName" id="inputGivenName" class="form-control" placeholder="First Name" required autofocus>
+            <li><label for="surname">Last Name</label></li>
+              <input type="surname" id="inputSurname" class="form-control" placeholder="Last Name" required autofocus>
+            <li><label for="inputEmail">Email</label></li>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+            <li><label for="username">Username</label></li>
+              <input type="username" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+            <li><label for="password">Password</label></li>
+              <input type="Password" id="inputPassword" class="form-control" placeholder="Password" required autofocus>
+            <li><label for="password">Verify Password</label></li>
+              <input type="PasswordCheck" id="inputPassword" class="form-control" placeholder="Verify Password" required autofocus>
+          </ul>
+        </form>
+        <br>
+        <form class="posttypes">
+          <h3>What types of posts do you want to see?<h3>
+          <ul>
+            <li><input type="checkbox" value="HR"> Homeowners looking for Roomates</li>
+            <li><input type="checkbox" value="RH"> Roomates looking for Homeowners</li>
+            <li><input type="checkbox" value="RR"> Roomates looking for Roomates</li>
+          </ul>
+        </form>
+        <input class="btn btn-lg btn-primary" type="submit" value="Submit" ></li>
+      </div>
     </div>
   </body>
-      
+
+  <style>
+    footer {position: relative;
+            padding-top: 50px;}
+  </style>
+
   <footer>
     <div id="wrap">
       <div class="footer">
@@ -64,13 +90,13 @@
         <nav>
           <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>            
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </footer>
-      
+
     <!-- Core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -79,3 +105,4 @@
     <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="../../assets/bootstrap/js/npm.js"></script>
 </html>
+

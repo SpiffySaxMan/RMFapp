@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Roomate Finder App: R4R Post Creation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="../../assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom styles for this application -->
+    <link href="../../assets/stylesheets/application.css" rel="stylesheet">
+    <!-- Custom styles for this page -->
+    <link href="theme.css" rel="stylesheet">
+    
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">RMF</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="../users/index.html">Users</a></li>
+            <li><a href="../settings/settings.html">Settings</a></li>
+            <li><a href="../sessions/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  </head>
+
+  <body class="body">
+    <div class="container well" role="main">
+      <h1>Create a post</h1>
+        
+        <form method="post">
+     <div class="form-group ">
+      <label class="control-label requiredField" for="posttitle">
+       Title your post
+       
+      </label>
+      <input class="form-control" id="posttitle" name="posttitle" placeholder="Title" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="r4r_post_textinput">
+       Compose a message for your post
+       
+      </label>
+      <textarea class="form-control" cols="40" id="r4r_post_textinput" name="r4r_post_textinput" rows="10"></textarea>
+      <span class="help-block" id="hint_r4r_post_textinput">
+       What makes you a good roommate?
+      </span>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="number">
+       How much do you want to spend on rent a month?
+       
+      </label>
+      <input class="form-control" id="number" name="number" placeholder="i.e. 500" type="text"/>
+      <span class="help-block" id="hint_number">
+       Put in a single number, not a range.
+      </span>
+     </div>
+     <div class="form-group" id="div_r4r_petsInput">
+      <label class="control-label requiredField" for="r4r_petsInput">
+       Do you have any pets?
+       
+      </label>
+      <div class="">
+       <label class="radio-inline">
+        <input name="r4r_petsInput" type="radio" value="No"/>
+        No
+       </label>
+       <label class="radio-inline">
+        <input name="r4r_petsInput" type="radio" value="Yes"/>
+        Yes
+       </label>
+      </div>
+     </div>
+     <div class="form-group ">
+      <label class="control-label " for="r4r_petDescription">
+       If you have pets, please describe them here. (how many you have, if they're a dog or a cat, etc.)
+      </label>
+      <textarea class="form-control" cols="40" id="r4r_petDescription" name="r4r_petDescription" rows="10"></textarea>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="r4r_roomates_numberInput">
+       How many roommates are you looking for?
+       
+      </label>
+      <select class="select form-control" id="r4r_roomates_numberInput" name="r4r_roomates_numberInput">
+       <option value="1">
+        1
+       </option>
+       <option value="2">
+        2
+       </option>
+       <option value="3">
+        3
+       </option>
+       <option value="4+">
+        4+
+       </option>
+      </select>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="r4r_smokingInput">
+       Do you smoke?
+       
+      </label>
+      <select class="select form-control" id="r4r_smokingInput" name="r4r_smokingInput">
+       <option value="No">
+        No
+       </option>
+       <option value="Sometimes">
+        Sometimes
+       </option>
+       <option value="Yes">
+        Yes
+       </option>
+       <option value='"Smoke what?"'>
+        "Smoke what?"
+       </option>
+      </select>
+     </div>
+     <div class="form-group ">
+      <label class="control-label " for="r4r_drinkingInput">
+       Do you drink?
+      </label>
+      <select class="select form-control" id="r4r_drinkingInput" name="r4r_drinkingInput">
+       <option value="No">
+        No
+       </option>
+       <option value="Socially">
+        Socially
+       </option>
+       <option value="Sometimes">
+        Sometimes
+       </option>
+       <option value="Yes">
+        Yes
+       </option>
+      </select>
+     </div>
+     <div class="form-group ">
+      <label class="control-label " for="r4r_petDescription">
+       If you have pets, please describe them here. (how many you have, if they're a dog or a cat, etc.)
+      </label>
+      <textarea class="form-control form-control" cols="40" id="r4r_petDescription" name="r4r_petDescription" rows="10"></textarea>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="r4r_bedtimeInput">
+       When do you usually go to bed?
+       
+      </label>
+      <select class="select form-control" id="r4r_bedtimeInput" name="r4r_bedtimeInput">
+       <option value="Before 9">
+        Before 9
+       </option>
+       <option value="Between 9 and 11 p.m.">
+        Between 9 and 11 p.m.
+       </option>
+       <option value="Between 11 and 1">
+        Between 11 and 1
+       </option>
+       <option value="After 1 a.m.">
+        After 1 a.m.
+       </option>
+       <option value="I work nights">
+        I work nights
+       </option>
+      </select>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="text">
+       How do you usually spend your Friday nights and weekends?
+       
+      </label>
+      <input class="form-control" id="text" name="text" type="text"/>
+     </div>
+     <div class="form-group">
+      <div>
+       <button class="btn btn-primary " name="submit" type="submit">
+        Submit
+       </button>
+      </div>
+     </div>
+    </form>
+        
+        
+        
+      </div>
+    </div>
+  </body>
+
+  <style>
+    footer {position: relative;
+            padding-top: 50px;}
+  </style>
+
+  <footer>
+    <div id="wrap">
+      <div class="footer">
+        <small>
+          <strong>The Roomate Finder App</strong>
+          by William Bennett, Xavier Cline, and Jack Wright
+        </small>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../assets/js/jquery-3.1.0.js"></script>
+    <script src="../../assets/js/application.js"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.js"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../assets/bootstrap/js/npm.js"></script>
+</html>
+
